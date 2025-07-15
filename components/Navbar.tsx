@@ -29,7 +29,10 @@ const Navbar = () => {
   return (
     <div className="w-full max-w-6xl mx-auto px-6 py-4 flex items-center justify-between bg-background text-foreground shadow-md z-50">
       {/* Logo */}
-      <div className="text-xl font-bold pText">DORMSYNC</div>
+      <Link
+        href="/">
+        <div className="text-xl font-bold pText">DORMSYNC</div>
+      </Link>
 
       {/* Center Navigation */}
       {/* Center Navigation */}
@@ -96,10 +99,15 @@ const Navbar = () => {
         <Button variant="outline" className="border border-primary text-white hover:bg-[#1D2347]">
           Become a Host
         </Button>
-        <Button className="bg-[#8D8DDA] text-white hover:bg-[#8D8DDA]/90">SignUp</Button>
-        <Button variant="outline" className="border border-primary text-white hover:bg-[#1D2347]">
-          SignIn
-        </Button>
+        <Link href="/signup">
+          <Button className="bg-[#8D8DDA] text-white hover:bg-[#8D8DDA]/90">SignUp
+          </Button>
+        </Link>
+        <Link href="/signin">
+          <Button variant="outline" className="border border-primary text-white hover:bg-[#1D2347]">
+            SignIn
+          </Button>
+        </Link>
       </div>
     </div>
   )

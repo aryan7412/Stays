@@ -29,7 +29,17 @@ import {
 } from "@/components/ui/navigation-menu"
 import Link from "next/link" // Make sure you're using this
 
-const staysList = ["Hotel", "Hostel", "Resort", "Guest House", "Cottage"]
+const staysList = [
+"Hostels",
+"Dormitory",
+"Capsule Hotels",
+"Homestays",
+"Campsites",
+"Eco Stays",
+"Boathouses",
+"Ashrams",
+"Community Stay"
+]
 
 export default function StaticSearchBar() {
     const [checkInDate, setCheckInDate] = useState<Date | undefined>(undefined)
