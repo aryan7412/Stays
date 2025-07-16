@@ -43,7 +43,9 @@ export default function Home() {
         />
       </div>
       <TestimonialsSection />
-      <h1 className="text-4xl font-bold ml-[32rem] mb-10 mt-14">You Might Be Wondering...</h1>
+      <h2 className="text-3xl md:text-4xl font-bold mb-10 text-center">
+        You Might Be Wondering..
+      </h2>
       <AccordionDemo />
     </div>
   );
