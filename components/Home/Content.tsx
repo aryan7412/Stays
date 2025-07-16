@@ -27,12 +27,12 @@ export default function ContentSection({
 }: ContentSectionProps) {
   return (
     <section
-      className={`w-full px-4 py-12 md:py-20 text-white ${className}`}
+      className={`w-full px-4 py-12 md:py-7 text-white ${className}`}
     >
       <div
         className={`max-w-7xl mx-auto flex flex-col md:flex-row ${
           reverse ? "md:flex-row-reverse" : ""
-        } items-center gap-10`}
+        } items-center gap-4`}
       >
         {/* Image Section */}
         {imageSrc && (
@@ -55,7 +55,7 @@ export default function ContentSection({
           </p>
           {buttonText && buttonLink && (
             <Link href={buttonLink}>
-              <button className="px-6 py-2 bg-pColor text-white rounded-full text-sm hover:bg-pColor/90 transition">
+              <button className="px-6 py-2 bg-[#8D8DDA] text-white rounded-full text-sm hover:bg-pColor/90 transition">
                 {buttonText}
               </button>
             </Link>
