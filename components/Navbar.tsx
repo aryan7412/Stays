@@ -96,9 +96,12 @@ const Navbar = () => {
       {/* Right Side */}
       <div className="flex items-center gap-4">
         <ModeToggle />
-        <Button variant="outline" className="border border-primary text-white hover:bg-[#1D2347]">
-          Become a Host
-        </Button>
+        <Link
+          href="/becomeHost">
+          <Button variant="outline" className="border border-primary text-white hover:bg-[#1D2347]">
+            Become a Host
+          </Button>
+        </Link>
         <Link href="/signup">
           <Button className="bg-[#8D8DDA] text-white hover:bg-[#8D8DDA]/90">SignUp
           </Button>

@@ -54,19 +54,19 @@ export default function SignUpGlass() {
               placeholder="Enter Your Email Address"
               className="bg-[#1D2347] border-none placeholder:text-gray-400 text-sm text-white"
             />
-            <Input
-              type="tel"
-              placeholder="Enter Your Mobile Number"
-              className="bg-[#1D2347] border-none placeholder:text-gray-400 text-sm text-white"
-            />
+            <div className="flex">
+              <div className="px-3 py-2 text-white text-sm bg-input/30 rounded-md mr-1">
+                +91
+              </div>
+              <Input
+                type="tel"
+                placeholder="Enter Your Mobile Number"
+                className="bg-[#1D2347] border-none placeholder:text-gray-400 text-sm text-white"
+              />
+            </div>
             <Input
               type="date"
               placeholder="Enter Your Date of Birth"
-              className="bg-[#1D2347] border-none placeholder:text-gray-400 text-sm text-white"
-            />
-            <Input
-              type="text"
-              placeholder="Enter Your Address"
               className="bg-[#1D2347] border-none placeholder:text-gray-400 text-sm text-white"
             />
             <Input
