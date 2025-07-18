@@ -1,3 +1,5 @@
+"use client"
+
 import React, { useState } from "react";
 import DashboardSidebar from "@/components/Dashboard/DashboardSidebar";
 import RoomManager from "@/components/Dashboard/RoomManager";
@@ -18,11 +20,11 @@ const sections = [
   { label: "Photos", component: <ManagePhotos /> },
 ];
 
-export default function BecomeHostDashboardPage() {
+export default function ControlPanelPage() {
   const [activeSection, setActiveSection] = useState(0);
 
   return (
-    <div className="flex bg-[#0C0F28] min-h-screen max-w-full">
+    <div className="flex bg-[#0C0F28] min-h-screen max-w-6xl mx-auto">
       <DashboardSidebar activeIndex={activeSection} onSelect={setActiveSection} />
       <main className="flex-1 p-6 overflow-auto">
         {sections[activeSection].component}

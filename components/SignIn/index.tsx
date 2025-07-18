@@ -6,7 +6,6 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { FcGoogle } from "react-icons/fc"
 import { GrApple } from "react-icons/gr";
-import { IoPhonePortraitOutline } from "react-icons/io5"
 import { MobileOtpDialog } from "@/components/SignIn/MobileOtpDialog"
 
 export default function LoginGlass() {
